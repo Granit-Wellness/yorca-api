@@ -1,0 +1,411 @@
+[
+  {
+    "pk": 0,
+    "model": "drugs.drug",
+    "fields": {
+      "name": "Alcohol",
+      "aliases": ["Brew", "Boze", "Liquor", "Sauce"],
+      "drug_type": "alchohol",
+      "description": "People drink to socialize, celebrate, and relax. Alcohol often has a strong effect on people—and throughout history,people have struggled to understand and manage alcohol’s power. Why does alcohol cause people to act and feel differently? How much is too much? Why do some people become addicted while others do not? The National Institute on Alcohol Abuse and Alcoholism is researching the answers to these and many other questions about alcohol.",
+      "image": "https://www.erowid.org/chemicals/mdma/images/mdma_summary1.jpg",
+      "effects": [
+        "Inhibitions and memory loss",
+        "Decision-making skills",
+        "Aggression",
+        "Coordination and physical control are impacted",
+        "Blurred vision"
+      ],
+      "health_risks": [
+        "Causes many deaths",
+        "Causes many injuries",
+        "Impairs judgment",
+        "Increases the risk of physical and sexual assault",
+        "Increases the risk of alcohol problems later in life",
+        "Interferes with brain development"
+      ],
+      "additional_media": "https://teens.drugabuse.gov/drug-facts/alcohol"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "drugs.drug",
+    "fields": {
+      "name": "Bath Salts",
+      "aliases": [
+        "Bloom",
+        "Cloud Nine",
+        "Cosmic Blast",
+        "Flakka",
+        "Ivory Wave",
+        "Lunar Wave",
+        "Scarface",
+        "Vanilla Sky",
+        "White Lightning"
+      ],
+      "description": "Bath salts is the name given to synthetic cathinones, a class of drugs that have one or more laboratory-made chemicals similar to cathinone. Cathinone is a stimulant found naturally in the khat plant, grown in East Africa and southern Arabia. Chemically, cathinones are similar to amphetamines such as methamphetamine and to MDMA (Ecstasy or Molly). Common lab-made cathinones found in “bath salts” include 3,4-methylenedioxypyrovalerone (MDPV), mephedrone (Drone, Meph, or Meow Meow), and methylone, but there are many others. These lab-made cathinones can be much stronger than the plant product and can cause harmful effects. Bath salts are usually white or brown crystal-like powder and are sold in small plastic or foil packages labeled Not for Human Consumption. They are sometimes labeled as plant food, jewelry cleaner, or phone screen cleaner. They are sold online and in drug product stores. These names or descriptions have nothing to do with the product. It’s a way for the drug makers to avoid detection by the Drug Enforcement Administration or local police. The lab-made cathinone products sold as bath salts should not be confused with products such as Epsom salts (the original bath salts) that people add to bathwater to help ease stress and relax muscles. Epsom salts are made of a mineral mixture of magnesium and sulfate. Bath salts are sometimes marketed as cheap substitutes for other drugs such as MDMA (Molly or Ecstasy) or cocaine. Methylone, a common chemical in bath salts, has been substituted for MDMA in capsules sold as Molly in some places. There is no way to know what is in a dose of bath salts other than testing it in a lab.",
+      "drug_type": "chemical",
+      "image": "https://teens.drugabuse.gov/sites/default/files/bath-salts-small.jpg",
+      "effects": [
+        "increased heart rate",
+        "euphoria (feeling intense happiness)",
+        "increased friendliness and sex drive",
+        "paranoia, agitation, and nervousness",
+        "hallucinations",
+        "violent behavior",
+        "sweating",
+        "feeling sick to the stomach and vomiting",
+        "irritability",
+        "dizziness",
+        "depression",
+        "panic attacks",
+        "reduced control of movements",
+        "cloudy thinking"
+      ],
+      "health_risks": [
+        "overdose",
+        "danger mixing with other substances",
+        "addiction",
+        "depression",
+        "anxiety",
+        "tremores",
+        "problems sleeping",
+        "paranoia"
+      ],
+      "additional_media": "https://youtu.be/DMcmrP-BWGk"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "drugs.drug",
+    "fields": {
+      "name": "Cocaine",
+      "aliases": [
+        "Blow",
+        "Bump",
+        "C",
+        "Candy",
+        "Charlie",
+        "Coke",
+        "Crack",
+        "Flake",
+        "Rock",
+        "Snow",
+        "Toot"
+      ],
+      "description": "Cocaine comes in two forms:cocaine powder, which is snorted\ncrack cocaine, which is smoked. Both forms may be injected. Cocaine is notoriously impure, and often contains other substances.",
+      "drug_type": "chemical",
+      "image": "https://teens.drugabuse.gov/sites/default/files/bagged_cocaine.jpg",
+      "effects": [
+        "extreme happiness and energy",
+        "mental alertness",
+        "sensitivity to sight, sound, and touch",
+        "irritability",
+        "paranoia",
+        "constricted blood vessels and dilated pupils",
+        "higher body temperature",
+        "higher blood pressure",
+        "faster heartbeat"
+      ],
+      "health_risks": [
+        "loss of sense of smell",
+        "increased risk of heart attack or stroke",
+        "nosebleeds",
+        "nasal damage",
+        "trouble swallowing",
+        "cough",
+        "asthma",
+        "lung damage",
+        "intestinal damage",
+        "higher risk for HIV",
+        "weight loss",
+        "poor nutrition"
+      ],
+      "additional_media": "https://teens.drugabuse.gov/drug-facts/bath-salts"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "drugs.drug",
+    "fields": {
+      "name": "Cough and Cold Medicines",
+      "aliases": [
+        "Candy",
+        "Dex",
+        "Drank",
+        "Lean",
+        "Robo",
+        "Robotripping",
+        "Skittles",
+        "Triple C",
+        "Tussin",
+        "Velvet"
+      ],
+      "description": "Millions of Americans take cough and cold medicines each year to help with symptoms of colds. When taken as instructed, these medicines can be safe and effective. They become harmful when taken in a way or dose other than directed on the package. Several cough and cold medicines contain ingredients that are psychoactive (mind-altering) when taken in higher-than-recommended dosages, and some people misuse them. These products also contain other ingredients that can add to the risks. Many of these medicines are bought “over the counter” (OTC), meaning you do not need a prescription to have them. ",
+      "drug_type": "medication",
+      "image": "https://teens.drugabuse.gov/sites/default/files/cough-and-cold.jpg",
+      "effects": [
+        "loss of coordination",
+        "numbness",
+        "faster heart beat",
+        "vision changes",
+        "feeling very excited"
+      ],
+      "health_risks": [
+        "feeling sick to the stomach",
+        "increased blood pressure",
+        "slurred speech",
+        "lack of oxygen to the brain",
+        "Long-term effects of cough and cold medicines are not known"
+      ],
+      "additional_media": "https://teens.drugabuse.gov/drug-facts/cough-and-cold-medicines"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "drugs.drug",
+    "fields": {
+      "name": "Prescription Pain Medications",
+      "aliases": [
+        "Happy Pills",
+        "Hillbilly Heroin",
+        "OC",
+        "Oxy",
+        "Percs",
+        "Vikes"
+      ],
+      "description": "Prescription opioids are medications that are chemically similar to endorphins – opioids that our body makes naturally to relieve pain. They are also similar to the illegal drug heroin. In nature, opioids are found in the seed pod of the opium poppy plant. Prescription opioids usually come in pill or liquid form, and are given to treat severe pain—for example, pain from dental surgery (read more about drug use and your mouth), serious sports injuries, or cancer. If you are in the hospital, they can be given through an IV (needle and tube) in your arm. Opioids are sometimes prescribed to treat pain that lasts a long time (chronic pain), but it is unclear if they are effective for long term pain.",
+      "drug_type": "medication",
+      "image": "https://teens.drugabuse.gov/sites/default/files/pills-drugs.jpg",
+      "effects": ["sleepiness", "confusion"],
+      "health_risks": [
+        "slowed or stopped breathing",
+        "overdose",
+        "addiction",
+        "nausea (feeling sick to the stomach)",
+        "constipation"
+      ],
+      "additional_media": "https://teens.drugabuse.gov/drug-facts/prescription-pain-medications-opioids"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "drugs.drug",
+    "fields": {
+      "name": "Cannabis",
+      "aliases": [
+        "Blunt",
+        "Boom",
+        "Bud",
+        "Gangster",
+        "Ganja",
+        "Grass",
+        "Green",
+        "Hash",
+        "Herb",
+        "Joint",
+        "Pot",
+        "Reefer",
+        "Sinsemilla",
+        "Skunk",
+        "Weed"
+      ],
+      "drug_type": "plant",
+      "description": "People take cannabis as a way of relaxing and getting high. The effects you experience will largely depend on whether you are used to taking the drug, how much you take, the type of cannabis you use your genes. If you have experience of anxiety and depression, you are more likely to experience negative side effects.",
+      "image": "https://www.erowid.org/chemicals/mdma/images/mdma_summary1.jpg",
+      "effects": [
+        "altered senses",
+        "altered sense of time",
+        "changes in mood",
+        "slow reaction time",
+        "problems with balance and coordination",
+        "increased appetite",
+        "trouble thinking and solving problems",
+        "memory problems",
+        "hallucinations",
+        "delusions",
+        "psychosis"
+      ],
+      "health_risks": [
+        "Increased heart rate",
+        "Respiratory (lung and breathing) problems",
+        "Increased risk for mental health problems",
+        "Increased risk of problems for an unborn baby"
+      ],
+      "additional_media": "https://teens.drugabuse.gov/drug-facts/marijuana"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "drugs.drug",
+    "fields": {
+      "name": "Heroin",
+      "aliases": [
+        "Black tar",
+        "Brown sugar",
+        "China white",
+        "H",
+        "Horse",
+        "Junk",
+        "Ska",
+        "Skunk",
+        "Smack",
+        "White Horse"
+      ],
+      "description": "Heroin is a very addictive drug made from morphine, a psychoactive (mind-altering) substance taken from the resin of the seed pod of the opium poppy plant. Heroin’s color and look depend on how it is made and what else it may be mixed with. It can be white or brown powder, or a black, sticky substance called black tar heroin. Heroin is part of a class of drugs called opioids. Other opioids include some prescription pain relievers, such as codeine, oxycodone (OxyContin), and hydrocodone (e.g. Vicodin).",
+      "drug_type": "chemical",
+      "image": "https://teens.drugabuse.gov/sites/default/files/heroin_powder.jpg",
+      "effects": [
+        "dry mouth",
+        "warm flushing skin",
+        "heavy feeling arms and legs",
+        "going `on the nod`, switching back and forth between being conscious and semi-conscious",
+        "a temporary feeling of intense happiness",
+        "clouded thinking",
+        "severe itching",
+        "heavy feeling arms and legs"
+      ],
+      "health_risks": [
+        "overdose",
+        "addiction",
+        "tolerance(more of the drug is needed to achieve the same high)",
+        "dependence (the need to continue use of the drug to avoid withdrawal symptoms)",
+        "problems sleeping",
+        "damage to the tissues inside the nose for people who sniff or snort it",
+        "painful area of tissue filled with puss (an abscess)",
+        "infection of the heart",
+        "constipation and stomach cramping",
+        "liver and kidney disease",
+        "lung problems",
+        "mental health problems, such as depression",
+        "sexual problems for men",
+        "changes in menstrual cycles for women"
+      ],
+      "additional_media": "https://teens.drugabuse.gov/drug-facts/heroin"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "drugs.drug",
+    "fields": {
+      "name": "MDMA",
+      "aliases": [
+        "Adam",
+        "Beans",
+        "Clarity",
+        "E",
+        "Ecstasy",
+        "Hug",
+        "Love drug",
+        "Lover's speed",
+        "Molly",
+        "X",
+        "XTC"
+      ],
+      "description": "Ecstasy tablets are notoriously impure, and often contain substances other than MDMA.Although ecstasy is a stimulant, it has different effects from other stimulants (such as amphetamines) as it causes feelings of empathy rather than euphoria.It is very dangerous to take ecstasy at the same time as MAOI antidepressants.",
+      "drug_type": "chemical",
+      "image": "https://www.erowid.org/chemicals/mdma/images/mdma_summary1.jpg",
+      "effects": [
+        "muscle tension",
+        "teeth clenching",
+        "lowered inhibition",
+        "nausea",
+        "blurred vision",
+        "dizziness and faintness",
+        "chills or sweating"
+      ],
+      "health_risks": [
+        "serious heart, liver, or kidney problems",
+        "increased risk for unsafe sex",
+        "increases in heart rate and blood pressure",
+        "problems with memory and attention",
+        "depression"
+      ],
+      "additional_media": "https://teens.drugabuse.gov/drug-facts/mdma-ecstasy-or-molly"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "drugs.drug",
+    "fields": {
+      "name": "Prescription Stimulant Medications",
+      "aliases": [
+        "Bennies",
+        "Black Beauties",
+        "Crosses",
+        "Hearts",
+        "JIF",
+        "LA Turnaround",
+        "MPH",
+        "R-ball",
+        "Skippy",
+        "Speed",
+        "Study Drugs",
+        "The Smart Drug",
+        "Truck Drivers",
+        "Uppers",
+        "Vitamin R"
+      ],
+      "description": "Prescription stimulants increase—or stimulate—activities and processes in the body. When prescribed by a doctor for a specific health condition, like ADHD, they can be relatively safe and effective. However, it is considered misuse when they are taken not as prescribed, to get high, or when you take some prescribed for someone else. This can lead to dependence and addiction.",
+      "drug_type": "medicine",
+      "image": "https://teens.drugabuse.gov/sites/default/files/rx-stimulants.png",
+      "effects": [
+        "increased energy",
+        "increased focus",
+        "euphoria (feeling intense happiness)"
+      ],
+      "health_risks": [
+        "feeling sick to the stomach",
+        "problems sleeping",
+        "increased blood pressure",
+        "irregular heartbeat",
+        "dangerously high body temperatures",
+        "lack of interest in eating, which can lead to poor nutrition",
+        "risk for seizures and stroke at high doses",
+        "intense anger",
+        "paranoia"
+      ],
+      "additional_media": "https://teens.drugabuse.gov/drug-facts/prescription-stimulant-medications-amphetamines"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "drugs.drug",
+    "fields": {
+      "name": "Prescription Depressant Medications",
+      "aliases": [
+        "A-minus",
+        "Barbs",
+        "Candy",
+        "Downers",
+        "Phennies",
+        "Red Birds",
+        "Reds",
+        "Sleeping Pills",
+        "Tooies",
+        "Tranks",
+        "Yellows",
+        "Yellow Jackets",
+        "Zombie Pills"
+      ],
+      "description": "Depressants, sometimes referred to as central nervous system (CNS) depressants or tranquilizers, slow down (or “depress”) the normal activity that goes on in the brain and spinal cord. Doctors often prescribe them for people who are anxious or can't sleep. When prescription depressants are taken as prescribed by a doctor, they can be relatively safe and helpful. However, it is considered misuse when they are taken not as prescribed, to get high, or when you take some prescribed for someone else. This can lead to dependence and addiction are still potential risks. Addiction means you continue to seek out and take the drug despite negative consequences",
+      "drug_type": "medication",
+      "image": "https://www.erowid.org/chemicals/mdma/images/mdma_summary1.jpg",
+      "effects": [
+        "slurred speech",
+        "poor concentration",
+        "confusion",
+        "dizziness",
+        "shallow breathing, which can lead to overdose and even death",
+        "sleepiness",
+        "lack of coordination"
+      ],
+      "health_risks": [
+        "addiction",
+        "dangerous withdrawl",
+        "dependency",
+        "overdose"
+      ],
+      "additional_media": "https://teens.drugabuse.gov/drug-facts/prescription-depressant-medications"
+    }
+  }
+]

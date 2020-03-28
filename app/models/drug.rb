@@ -5,7 +5,7 @@ module Yorca
   
       dataset_module do
         def find_or_create!(values)
-          self[values] || Drug.create!(values)
+          self[values] || Drug.create(values)
         end
       end
     end
@@ -14,11 +14,15 @@ end
 
 # Table: drugs
 # Columns:
-#  id         | uuid                        | PRIMARY KEY DEFAULT uuid_generate_v4()
-#  name       | text                        | NOT NULL
-#  created_at | timestamp without time zone |
-#  updated_at | timestamp without time zone |
+#  id                    | uuid                        | PRIMARY KEY DEFAULT uuid_generate_v4()
+#  name                  | text                        | NOT NULL
+#  avatar_uri            | text                        |
+#  description           | text                        |
+#  external_resource_url | text                        |
+#  created_at            | timestamp without time zone |
+#  updated_at            | timestamp without time zone |
 # Indexes:
-#  drugs_pkey | PRIMARY KEY btree (id)
+#  drugs_pkey     | PRIMARY KEY btree (id)
+#  drugs_name_key | UNIQUE btree (name)
 # Referenced By:
 #  posts | posts_drug_id_fkey | (drug_id) REFERENCES drugs(id)
