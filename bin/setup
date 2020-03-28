@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+
+# Run this script immediately after cloning the codebase.
+
+# Exit if any subcommand fails
+set -e
+
+# Set up Ruby dependencies via Bundler
+gem list bundler --installed > /dev/null || gem install bundler
+bundle install
+
+psql -c 'DROP DATABASE IF EXISTS sample_development;'
+psql -c 'DROP DATABASE IF EXISTS sample_test;'
+psql -c 'CREATE DATABASE sample_development;'
+psql -c 'CREATE DATABASE sample_test;'
+
+bundle exec rake db:migrate
+RACK_ENV=test bundle exec rake db:migrate
+
+if [ ! -f .env.development ]; then
+  cp '.env.sample' '.env.development'
+  echo 'Note about local env:'
+  echo '  .env.sample has been copied to .env.development'
+  echo '  Make sure to fill out the required keys (ask another developer if you don''t know where to find them)'
+fi

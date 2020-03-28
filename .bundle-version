@@ -1,0 +1,12 @@
+versioned_bundle() {
+  version_file=${PWD}/../.bundle-version
+
+  if [[ -r $version_file ]]; then
+    version=$(<$version_file)
+    bundle _${version}_ "$@"
+  else
+    bundle "$@"
+  fi
+}
+
+alias bundle=versioned_bundle
