@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Sample
+module Yorca
   module Memoize
     def self.included(klass)
       memoizer = klass.const_set('ClearbitMemoizer', Module.new)

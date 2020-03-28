@@ -1,6 +1,4 @@
-# Sample routes -- does not work!
-
-module Sample
+module Yorca
   module Routes
     class Drugs < Base
       get '/drugs' do

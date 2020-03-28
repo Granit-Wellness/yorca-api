@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Sample
+module Yorca
   module Routes
     class Base < Sinatra::Base
       configure do

@@ -6,7 +6,7 @@ require_relative './config/init'
 require_relative './app/models'
 require_relative './app/routes'
 
-module Sample
+module Yorca
   class App < Sinatra::Base
     configure do
       disable :method_override
@@ -29,9 +29,9 @@ module Sample
     # Middleware
     use Rack::Deflater
     use Rack::PostBodyContentTypeParser
-    use Sample::Middleware::Cors
+    use Yorca::Middleware::Cors
 
-    use Routes::Events
+    use Routes::Drugs
 
     # Routes
     use Sinatra::Router do
@@ -40,4 +40,4 @@ module Sample
   end
 end
 
-include Sample # rubocop:disable Style/MixinUsage
+include Yorca # rubocop:disable Style/MixinUsage

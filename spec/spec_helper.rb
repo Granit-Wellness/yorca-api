@@ -33,10 +33,10 @@ RSpec.configure do |config|
     # The truncation strategy is only required when after_commit hooks are needed or when code is multithreaded.
     if cleanup_strategy = example.metadata[:clean_database_with]
       example.run
-      DatabaseCleaner[:sequel, connection: Sample.database].clean_with(cleanup_strategy)
+      DatabaseCleaner[:sequel, connection: Yorca.database].clean_with(cleanup_strategy)
     else
       DatabaseCleaner.strategy = :transaction
-      DatabaseCleaner[:sequel, connection: Sample.database].cleaning do
+      DatabaseCleaner[:sequel, connection: Yorca.database].cleaning do
         example.run
       end
     end

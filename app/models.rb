@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
-module Sample
+module Yorca
   module Models
   end
 end
 
-require_relative './models/event'
+require_relative './models/drug'
+require_relative './models/user'
 
-Sample.database.loggers << Logger.new($stdout) if Sample::Config.development?
+Yorca.database.loggers << Logger.new($stdout) if Yorca::Config.development?

@@ -9,4 +9,4 @@ use Rack::Static,
     [:all, { 'Cache-Control' => 'public, max-age=31536000' }],
   ]
 
-run Sample::App
+run Yorca::App

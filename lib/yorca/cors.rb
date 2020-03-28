@@ -1,4 +1,4 @@
-module Sample
+module Yorca
   module Middleware
     class Cors
       attr_reader :app

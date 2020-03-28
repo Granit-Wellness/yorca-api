@@ -9,10 +9,10 @@ set -e
 gem list bundler --installed > /dev/null || gem install bundler
 bundle install
 
-psql -c 'DROP DATABASE IF EXISTS sample_development;'
-psql -c 'DROP DATABASE IF EXISTS sample_test;'
-psql -c 'CREATE DATABASE sample_development;'
-psql -c 'CREATE DATABASE sample_test;'
+psql -c 'DROP DATABASE IF EXISTS yorca_development;'
+psql -c 'DROP DATABASE IF EXISTS yorca_test;'
+psql -c 'CREATE DATABASE yorca_development;'
+psql -c 'CREATE DATABASE yorca_test;'
 
 bundle exec rake db:migrate
 RACK_ENV=test bundle exec rake db:migrate

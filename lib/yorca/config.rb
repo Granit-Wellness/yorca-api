@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Sample
+module Yorca
   module Config
     extend self
     def environment
@@ -38,7 +38,7 @@ module Sample
     end
 
     def database_url
-      ENV['DATABASE_URL'] || "postgres://localhost:5432/sample_#{Config.environment}"
+      ENV['DATABASE_URL'] || "postgres://localhost:5432/yorca_#{Config.environment}"
     end
 
     def database_url_options

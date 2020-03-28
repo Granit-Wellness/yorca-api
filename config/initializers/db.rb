@@ -3,7 +3,7 @@
 require 'sequel'
 require 'sequel/plugins/serialization'
 
-module Sample
+module Yorca
   extend self
   def database
     @database ||= connect!
@@ -37,7 +37,7 @@ Sequel::Deprecation.output = false
 Sequel::Instrumentation.instrument
 
 # Preload db
-Sample.database
+Yorca.database
 
 Sequel.extension :pg_array_ops
 Sequel.extension :pg_json_ops
