@@ -6,6 +6,7 @@ require_relative './config/init'
 require_relative './app/extensions'
 require_relative './app/models'
 require_relative './app/routes'
+require_relative './app/graphql'
 
 module Yorca
   class App < Sinatra::Base
@@ -15,6 +16,7 @@ module Yorca
       disable :dump_errors
       disable :protection
       enable :raise_errors
+      enable :sessions
 
       set :erb, escape_html: true
 

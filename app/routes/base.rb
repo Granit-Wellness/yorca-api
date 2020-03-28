@@ -13,7 +13,6 @@ module Yorca
         disable :show_exceptions
         disable :dump_errors
         enable :raise_errors
-        enable :sessions
         register Extensions::Auth
 
         set :erb, escape_html: true,

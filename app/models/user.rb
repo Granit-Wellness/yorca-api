@@ -31,3 +31,5 @@ end
 #  users_pkey        | PRIMARY KEY btree (id)
 #  users_iid_index   | UNIQUE btree (iid)
 #  users_email_index | btree (email)
+# Referenced By:
+#  posts | posts_user_id_fkey | (user_id) REFERENCES users(id)

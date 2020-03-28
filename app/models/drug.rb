@@ -20,3 +20,5 @@ end
 #  updated_at | timestamp without time zone |
 # Indexes:
 #  drugs_pkey | PRIMARY KEY btree (id)
+# Referenced By:
+#  posts | posts_drug_id_fkey | (drug_id) REFERENCES drugs(id)

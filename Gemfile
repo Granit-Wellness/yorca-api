@@ -11,6 +11,8 @@ gem 'dotenv', '~> 2.7.2'
 gem 'foreman', require: false
 gem 'nokogiri'
 gem 'google-api-client', '~> 0.9', require: 'google/apis/gmail_v1'
+gem 'graphql'
+gem 'graphql-batch'
 gem 'Indirizzo'
 gem 'irb', require: false
 gem 'omniauth'
