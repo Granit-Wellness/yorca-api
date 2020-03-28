@@ -1,6 +1,8 @@
 module Yorca
   module Models
     class Drug < Sequel::Model(:drugs)
+      one_to_many :posts
+  
       dataset_module do
         def find_or_create!(values)
           self[values] || Drug.create!(values)
