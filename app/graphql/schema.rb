@@ -3,7 +3,6 @@
 module Yorca
   module Graphql
     class Schema < ::GraphQL::Schema
-      mutation Mutation
       query Query
 
       # Opt in to the new runtime (default in future graphql-ruby versions)

@@ -3,7 +3,6 @@
 $LOAD_PATH << File.expand_path(__dir__)
 
 require_relative './config/init'
-require_relative './app/extensions'
 require_relative './app/models'
 require_relative './app/routes'
 require_relative './app/graphql'
@@ -38,7 +37,7 @@ module Yorca
 
     # Routes
     use Sinatra::Router do
-      mount Routes::Client
+      mount Routes::Graphql
     end
   end
 end

@@ -37,7 +37,7 @@ module Yorca
       return if klass.blank?
 
       where = {
-        account_id: context[:current_account].id,
+        user_id: context[:current_user].id,
         archived_at: nil,
       }
 

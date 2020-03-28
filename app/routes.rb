@@ -6,4 +6,5 @@ module Yorca
 end
 
 require_relative './routes/base'
+require_relative './routes/graphql'
 require_relative './routes/drugs'
