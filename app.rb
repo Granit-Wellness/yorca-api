@@ -24,8 +24,8 @@ module Yorca
         secure: production?,
         expire_after: 5.years,
         secret: ENV['SESSION_SECRET']
-    end
-
+      end
+      
     register Sinatra::Instrumentation
 
     # Middleware

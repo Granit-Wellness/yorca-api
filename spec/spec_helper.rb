@@ -13,8 +13,17 @@ require 'faker'
 WebMock.disable_net_connect!
 OmniAuth.config.test_mode = true
 
+Dir[File.expand_path('spec/support/**/*.rb')].each do |file|
+  # Skip migrations as they're loaded when needed.
+  next if file.include?('/migrations/')
+
+  require file
+end
+
 RSpec.configure do |config|
   include Rack::Test::Methods
+  include Spec::Support::Helpers
+  include Spec::Support::GraphqlHelpers
 
   config.backtrace_exclusion_patterns << %r{spec/spec_helper.rb}
   config.backtrace_exclusion_patterns << %r{/gems/}
