@@ -17,6 +17,7 @@ describe Yorca::Graphql::Schema, '.execute' do
             id
             name
             description
+            avatarUri
           }
         }
       QUERY
@@ -24,5 +25,8 @@ describe Yorca::Graphql::Schema, '.execute' do
 
     drugs = result[:drugs]
     expect(drugs[0]['id']).to eq drug.id
+    expect(drugs[0]['name']).to eq drug.name
+    expect(drugs[0]['description']).to eq drug.description
+    expect(drugs[0]['avatarUri']).to eq drug.avatar_uri
   end
 end
