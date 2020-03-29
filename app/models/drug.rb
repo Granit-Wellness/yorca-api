@@ -24,5 +24,3 @@ end
 # Indexes:
 #  drugs_pkey     | PRIMARY KEY btree (id)
 #  drugs_name_key | UNIQUE btree (name)
-# Referenced By:
-#  posts | posts_drug_id_fkey | (drug_id) REFERENCES drugs(id)

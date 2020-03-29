@@ -18,11 +18,9 @@ end
 #  title      | text                        | NOT NULL
 #  body       | text                        | NOT NULL
 #  user_id    | uuid                        |
-#  drug_id    | uuid                        |
 #  created_at | timestamp without time zone |
 #  updated_at | timestamp without time zone |
 # Indexes:
 #  posts_pkey | PRIMARY KEY btree (id)
 # Foreign key constraints:
-#  posts_drug_id_fkey | (drug_id) REFERENCES drugs(id)
 #  posts_user_id_fkey | (user_id) REFERENCES users(id)
