@@ -1,7 +1,7 @@
 module Yorca
   module Models
     class Post < Sequel::Model(:posts)
-      many_to_one :drug
+      many_to_one :user
 
       dataset_module do
         def find_or_create!(values)

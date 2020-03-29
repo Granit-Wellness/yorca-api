@@ -7,6 +7,7 @@ Sequel.migration do
       text  :email, null: false
       text  :password, null: false
       text  :annonymous_name, null: false
+      text  :avatar_uri
 
       timestamp :created_at
       timestamp :updated_at

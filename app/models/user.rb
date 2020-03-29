@@ -14,6 +14,12 @@ module Yorca
       def authenticate?(value)
         BCrypt::Password.new(password) == value
       end
+
+      def before_create
+        self.annonymous_name ||= Faker::Name.unique.name
+        self.avatar_uri ||= Faker::Avatar.image
+        super
+      end
     end
   end
 end
@@ -25,6 +31,7 @@ end
 #  email           | text                        | NOT NULL
 #  password        | text                        | NOT NULL
 #  annonymous_name | text                        | NOT NULL
+#  avatar_uri      | text                        |
 #  created_at      | timestamp without time zone |
 #  updated_at      | timestamp without time zone |
 # Indexes:

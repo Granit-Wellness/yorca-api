@@ -7,8 +7,18 @@ module Spec
         Yorca::App
       end
 
+      def create_user(options = {})
+        params = {
+          email: 'david.t.noah@gmail.com',
+          password: 'password'
+        }.merge(options)
+
+        user = Models::User.new(params)
+        user.save
+      end
+
       def current_user(values = {})
-        @current_user ||= Models::User.new(*values)
+        @current_user ||= create_user(values)
       end
 
       def last_response_body

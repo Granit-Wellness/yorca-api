@@ -8,6 +8,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem 'activesupport'
 gem 'bcrypt'
 gem 'dotenv', '~> 2.7.2'
+gem 'faker'
 gem 'foreman', require: false
 gem 'nokogiri'
 gem 'google-api-client', '~> 0.9', require: 'google/apis/gmail_v1'
