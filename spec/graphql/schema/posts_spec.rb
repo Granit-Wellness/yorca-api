@@ -17,6 +17,7 @@ describe Yorca::Graphql::Schema, '.execute' do
             id
             title
             body
+            createdAt
             user {
               id
               email
@@ -31,5 +32,6 @@ describe Yorca::Graphql::Schema, '.execute' do
     expect(posts[0]['title']).to eq post.title
     expect(posts[0]['body']).to eq post.body
     expect(posts[0]['user']['id']).to eq current_user.id
+    expect(posts[0]['createdAt'].to_datetime).to be_within(1.second).of post.created_at.to_datetime
   end
 end

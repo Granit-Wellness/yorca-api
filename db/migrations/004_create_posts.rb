@@ -7,7 +7,7 @@ Sequel.migration do
 
       column :title, :text, null: false
       column :body, :text, null: false
-      foreign_key :user_id, :users, type: 'uuid', key: [:id]
+      foreign_key :user_id, :users, type: 'uuid', key: [:id], null: false
 
       column :created_at, DateTime
       column :updated_at, DateTime

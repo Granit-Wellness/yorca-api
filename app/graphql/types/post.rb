@@ -11,6 +11,7 @@ module Yorca
         field :title, String, null: false
         field :body, String, null: true
         field :user, Types::User, null: false
+        field :created_at, DateTime, null: false
       end
     end
   end

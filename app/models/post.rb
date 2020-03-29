@@ -17,7 +17,7 @@ end
 #  id         | uuid                        | PRIMARY KEY DEFAULT uuid_generate_v4()
 #  title      | text                        | NOT NULL
 #  body       | text                        | NOT NULL
-#  user_id    | uuid                        |
+#  user_id    | uuid                        | NOT NULL
 #  created_at | timestamp without time zone |
 #  updated_at | timestamp without time zone |
 # Indexes:
